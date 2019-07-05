@@ -77,5 +77,4 @@ public class FileController {
         fileService.deleteAll();
         return "已删除所有文件";
     }
-
 }
