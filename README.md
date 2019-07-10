@@ -182,7 +182,7 @@ docker images
 docker run --name fileserver -p 2701:2701 -d file/server:v1
 ```
 启动成功后，在浏览器中输入：
->http://192.168.199.50/2701/swagger-ui.html
+>http://192.168.199.50:2701/swagger-ui.html
 
 如果能正常访问并显示swagger2 api界面说明部署成功，一个文件服务器就搭建完成。
 # 5、使用文件服务器
