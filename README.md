@@ -187,7 +187,7 @@ docker run --name fileserver -p 2701:2701 -d file/server:v1
 如果能正常访问并显示swagger2 api界面说明部署成功，一个文件服务器就搭建完成。
 # 5、使用文件服务器
 ## 5.1、服务器api
-图片: https://uploader.shimo.im/f/fwSvZs0QHbMuPgiM.png
+![图片](https://uploader.shimo.im/f/fwSvZs0QHbMuPgiM.png)
 ## 5.2、RestTemplate上传文件
 如我们要在自己写项目中上传文件到文件服务器，而这个文件来自客户端（安卓、iOS以及小程序等客户端）。
 controller层接收文件：
