@@ -129,7 +129,7 @@ file.path =http://localhost:${server.port}/online/
 >http://localhost:2701/swagger-ui.html#!/
 
 浏览器成功显示swagger2的api接口页面说明启动成功，大家测试下文件上传和在线查看等功能。
-![图片](https://uploader.shimo.im/f/hD1QCAWYDBoRkKC0.png!thumbnail)
+![图片](https://www.sunnymaple.cn/images/open/1/1.png)
 ## 4.3、文件服务器的部署
 ### 4.3.1、修改配置文件
 注意，如果将文件服务器部署到docker容器中，4.2.1中配置的属性spring.data.mongodb.uri中的ip就不能再使用宿主机的ip了，使用下面命令查看mongodb容器在docker中的ip：
@@ -176,7 +176,7 @@ docker build -t file/server:v1 .
 ```bash
 docker images
 ```
-![图片](https://uploader.shimo.im/f/M30h7DrnKmgBeaOO.png!thumbnail)
+![图片](https://www.sunnymaple.cn/images/open/1/2.png)
 ### 4.3.6、创建并运行容器
 ```bash
 docker run --name fileserver -p 2701:2701 -d file/server:v1
@@ -187,7 +187,7 @@ docker run --name fileserver -p 2701:2701 -d file/server:v1
 如果能正常访问并显示swagger2 api界面说明部署成功，一个文件服务器就搭建完成。
 # 5、使用文件服务器
 ## 5.1、服务器api
-![图片](https://uploader.shimo.im/f/fwSvZs0QHbMuPgiM.png)
+![图片](https://www.sunnymaple.cn/images/open/1/3.png)
 ## 5.2、RestTemplate上传文件
 如我们要在自己写项目中上传文件到文件服务器，而这个文件来自客户端（安卓、iOS以及小程序等客户端）。
 controller层接收文件：
